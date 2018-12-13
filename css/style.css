@@ -1,0 +1,248 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body{
+	background: url("/images/pic1.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: "Poppins";
+}
+.container{
+	padding:0;
+	margin: 0;
+}
+.intro{
+	margin: 0 auto;
+}
+.intro h1{
+	font-family: "Poppins";
+	font-weight: bold;
+	font-size: 5rem;
+	text-align: center;
+	color:white;
+	margin: 20% auto 0 auto;
+}
+.intro h2{
+	font-family: "Poppins";
+	font-weight:400;
+	color:white;
+	font-size: 0.8rem;
+	text-align: right;
+	margin: 0 auto 27% auto;
+}
+.summary{
+	color:white;
+	font-family: "Poppins";
+	text-decoration: none;
+	text-align: right;
+	margin: -0.5% auto 10% auto;
+}
+.summary a{
+	text-decoration: none;
+	color:white;
+}
+.preamble h3{
+	font-family: "Poppins";
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+	color:white;
+	margin: 5% auto 4% auto;
+}
+.preamble p{
+	font-family: "Poppins";
+	font-size: 0.9rem;
+	text-align: right;
+	color:white;
+}
+.explanation h3,.sidebar h3{
+	font-family: "Poppins";
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+	color:white;
+	margin: 10% auto 4% auto;
+}
+.explanation{
+	font-family: "Poppins";
+	font-size: 0.9rem;
+	text-align: left;
+	color:white;
+}
+.participation{
+	font-family: "Poppins";
+	font-size: 0.9rem;
+	text-align: right;
+	color:white;
+	float: right;
+}
+.participation h3,.benefits h3,.requirements h3{
+	font-family: "Poppins";
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+	color:white;
+	margin: 10% auto 4% auto;
+}
+.participation a{
+	text-decoration: none;
+	color:white;
+}
+.benefits{
+	font-family: "Poppins";
+	font-size: 0.9rem;
+	text-align: left;
+	color:white;
+	float: left;
+}
+.requirements{
+	font-family: "Poppins";
+	font-size: 0.9rem;
+	text-align: right;
+	color:white;
+	float: right;
+}
+.requirements a{
+	text-decoration: none;
+	color:white;
+}
+.sidebar{
+	text-align: center;
+	color:white;
+	font-family: "Poppins";
+	margin: 0 auto;
+}
+.sidebar li{
+	list-style-type: none;
+}
+.sidebar li{
+	display: inline-block;
+	position: relative;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 5px 30px;
+	background: rgba(0,0,0,0.09);
+	padding:5px;
+}
+.btn-3::after{
+	left: 0;
+	bottom: 0;
+	transition-delay: 0.6s;
+  }
+  .btn-3 span::after{
+	transition-delay: 0.4s;
+	right: 0;
+	bottom: 0
+  }
+  .btn-3::before{
+	right: 0;
+	top: 0;
+	transition-delay: 0.2s;
+  }
+  .btn-3 span::before{
+	transition-delay: 0s;
+	left: 0;
+	top: 0;
+  }
+  
+  .btn-3:hover::after{
+	transition-delay: 0s;
+  }
+  .btn-3:hover span::after{
+	transition-delay: 0.2s;
+  }
+  .btn-3:hover::before{
+	transition-delay: 0.4s;
+  }
+  .btn-3:hover span::before{
+	transition-delay: 0.6s;
+  }
+
+  .design-selection li::before, .design-selection li::after{
+	content:"";
+	width: 0;
+	height: 2px;
+	position: absolute;
+	transition: all 0.2s linear;
+	background: #fff;
+  }
+  
+	span::before, span::after{
+	content:"";
+	width:2px;
+	height:0;
+	position: absolute;
+	transition: all 0.2s linear;
+	background: #fff;
+  }
+  .design-selection li:hover::before, .design-selection li:hover::after{
+	width: 100%;
+  }
+  .design-selection li:hover span::before, .design-selection li:hover span::after{
+	height: 100%;
+  }
+  .design-selection li a{
+	  color:white;
+	  text-decoration: none;
+  }
+  .design-selection li a:hover{
+	  color:white;
+  }
+  .design-archives ul{
+	  text-align: center;
+	  display: inline;
+  }
+  .design-archives li a{
+	color:white;
+	text-decoration: none;
+}
+.design-archives li a:hover{
+	transition: ease-in-out .5s;
+	background: #222222;
+}
+.zen-resources{
+	float: left;
+}
+.zen-resources ul{
+	text-align: center;
+	display: inline;
+	float: left;
+}
+.zen-resources li a{
+	color:white;
+	text-decoration: none;
+}
+.zen-resources li a:hover{
+	transition: ease-in-out .5s;
+	background: #222222;
+}
+
+footer a{
+	color:white;
+	text-decoration: none;
+	padding:5px;
+	font-family: "Poppins";
+	font-weight: bold;
+}
+footer a:hover{
+	color:white;
+	transition: ease-in-out .5s;
+	background: #222222;
+	padding:10px;
+}
